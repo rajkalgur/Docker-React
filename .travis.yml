@@ -5,8 +5,8 @@ services:
 before_install:
   - docker build -t docker-react . 
 
-script:
-  - docker run -e CI=true docker-react npm run test
+#script:
+#  - docker run -e CI=true docker-react npm run test
 
 deploy:
   provider: elasticbeanstalk
